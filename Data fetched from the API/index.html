@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Users</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>User List</h1>
+
+    <button onclick="fetchUsers()" id="getDataBtn">Get Data</button>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Enter Name or ID" />
+      <select id="searchBy">
+        <option value="name">Name</option>
+        <option value="id">ID</option>
+      </select>
+      <button onclick="searchUser()">Search</button>
+    </div>
+
+    <table id="usersTable">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Username</th>
+          <th>City</th>
+          <th>Website</th>
+          <th>Image</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
